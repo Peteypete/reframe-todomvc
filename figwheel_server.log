@@ -1,0 +1,444 @@
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.691 seconds.[0m
+notifying browser that file changed:  resources/public/js/goog/deps.js
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.536 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/subs.cljs   line:147  column:2  ----[0m
+
+  [1mUse of undeclared Var todomvc.subs/register-sub[0m
+
+  [36m143[0m  [36m                      :all    identity)][0m
+  [36m144[0m  [36m      (filter filter-fn todos))))[0m
+  [36m145[0m  [36m[0m
+  [36m146[0m  [36m[0m
+  [33m147[0m  [1m(register-sub[0m
+  [0m   [0m  [33m ^--- Use of undeclared Var todomvc.subs/register-sub[0m
+  [36m148[0m  [36m  :all-complete?[0m
+  [36m149[0m  [36m  :<- [:todos][0m
+  [36m150[0m  [36m  (fn [todos _][0m
+  [36m151[0m  [36m    (every? :done todos)))[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/subs.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.73 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.451 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.822 seconds.[0m
+notifying browser that file changed:  resources/public/js/goog/deps.js
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.824 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.906 seconds.[0m
+notifying browser that file changed:  resources/public/js/goog/deps.js
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/events.cljs   line:199  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.events/GET[0m
+
+  [36m195[0m  [36m  (fn                ;; <-- the handler function[0m
+  [36m196[0m  [36m    [db _][0m
+  [36m197[0m  [36m[0m
+  [36m198[0m  [36m    ;; kick off the GET, making sure to supply a callback for success and failure[0m
+  [33m199[0m  [1m    (GET[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var todomvc.events/GET[0m
+  [36m200[0m  [36m      "http://localhost:3000/cch"[0m
+  [36m201[0m  [36m      {:handler       #(do (js/alert %1) (dispatch [:add-todo (str %1)]))   ;; <2> further dispatch !![0m
+  [36m202[0m  [36m       :error-handler #(js/alert (str "error " %1))}) ;; <2> further dispatch !![0m
+  [36m203[0m  [36m[0m
+  [36m204[0m  [36m     ;; update a flag in `app-db` ... presumably to cause a "Loading..." UI[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/events.cljs  ----[0m
+[36m----  Compiler Warning on   src/todomvc/events.cljs   line:201  column:43  ----[0m
+
+  [1mUse of undeclared Var todomvc.events/dispatch[0m
+
+  [36m198[0m  [36m    ;; kick off the GET, making sure to supply a callback for success and failure[0m
+  [36m199[0m  [36m    (GET[0m
+  [36m200[0m  [36m      "http://localhost:3000/cch"[0m
+  [33m201[0m  [1m      {:handler       #(do (js/alert %1) (dispatch [:add-todo (str %1)]))   ;; <2> further dispatch !![0m
+  [0m   [0m  [33m                                          ^--- Use of undeclared Var todomvc.events/dispatch[0m
+  [36m202[0m  [36m       :error-handler #(js/alert (str "error " %1))}) ;; <2> further dispatch !![0m
+  [36m203[0m  [36m[0m
+  [36m204[0m  [36m     ;; update a flag in `app-db` ... presumably to cause a "Loading..." UI[0m
+  [36m205[0m  [36m     ))[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/events.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.201 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.893 seconds.[0m
+notifying browser that file changed:  resources/public/js/goog/deps.js
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 4.116 seconds.[0m
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.095 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.17 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:105  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/form-panel[0m
+
+  [36m101[0m  [36m   [:section#todoapp[0m
+  [36m102[0m  [36m    [task-entry][0m
+  [36m103[0m  [36m    (when (seq @(subscribe [:todos]))[0m
+  [36m104[0m  [36m      [task-list])[0m
+  [33m105[0m  [1m    [form-panel][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var todomvc.views/form-panel[0m
+  [36m106[0m  [36m    [footer-controls]][0m
+  [36m107[0m  [36m   [:footer#info[0m
+  [36m108[0m  [36m    [:p "Double-click to edit a todo"]]])[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(defn forms-panel[][0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.108 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:105  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/form-panel[0m
+
+  [36m101[0m  [36m   [:section#todoapp[0m
+  [36m102[0m  [36m    [task-entry][0m
+  [36m103[0m  [36m    (when (seq @(subscribe [:todos]))[0m
+  [36m104[0m  [36m      [task-list])[0m
+  [33m105[0m  [1m    [form-panel][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var todomvc.views/form-panel[0m
+  [36m106[0m  [36m    [footer-controls]][0m
+  [36m107[0m  [36m   [:footer#info[0m
+  [36m108[0m  [36m    [:p "Double-click to edit a todo"]]])[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(defn forms-panel[e][0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.267 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:105  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/form-panel[0m
+
+  [36m101[0m  [36m   [:section#todoapp[0m
+  [36m102[0m  [36m    [task-entry][0m
+  [36m103[0m  [36m    (when (seq @(subscribe [:todos]))[0m
+  [36m104[0m  [36m      [task-list])[0m
+  [33m105[0m  [1m    [form-panel][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var todomvc.views/form-panel[0m
+  [36m106[0m  [36m    [footer-controls]][0m
+  [36m107[0m  [36m   [:footer#info[0m
+  [36m108[0m  [36m    [:p "Double-click to edit a todo"]]])[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(defn forms-panel[e][0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[31mFailed to compile "resources/public/js/client.js" in 0.655 seconds.[0m
+[36m----  Could not Read  src/todomvc/views.cljs   line:112 ----[0m
+
+  [1m/Users/peterwen/Documents/GitHub/re-frame/examples/todomvc/src/todomvc/views.cljs [line 112, col 21] No reader function for tag pressme.[0m
+
+  [36m110[0m  [36m(defn forms-panel[e][0m
+  [36m111[0m  [36m  [:div[0m
+  [33m112[0m  [1m   [:button #pressme[0m
+  [0m   [0m  [33m   /Users/peterwen/Documents/GitHub/re-frame/examples/todomvc/src/todomvc/views.cljs [line 112, col 21] No reader function for tag pressme.[0m
+  [36m113[0m  [36m    {:on-click #(dispatch [:request-cch])}[0m
+  [36m114[0m  [36m    "Click Me To Test CCH Connection NOW2"][0m
+  [36m115[0m  [36m   ])[0m
+
+[36m----  Reader Error : Please see src/todomvc/views.cljs  ----[0m
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:105  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/form-panel[0m
+
+  [36m101[0m  [36m   [:section#todoapp[0m
+  [36m102[0m  [36m    [task-entry][0m
+  [36m103[0m  [36m    (when (seq @(subscribe [:todos]))[0m
+  [36m104[0m  [36m      [task-list])[0m
+  [33m105[0m  [1m    [form-panel][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var todomvc.views/form-panel[0m
+  [36m106[0m  [36m    [footer-controls]][0m
+  [36m107[0m  [36m   [:footer#info[0m
+  [36m108[0m  [36m    [:p "Double-click to edit a todo"]]])[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(defn forms-panel[e][0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.061 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:105  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/form-panel[0m
+
+  [36m101[0m  [36m   [:section#todoapp[0m
+  [36m102[0m  [36m    [task-entry][0m
+  [36m103[0m  [36m    (when (seq @(subscribe [:todos]))[0m
+  [36m104[0m  [36m      [task-list])[0m
+  [33m105[0m  [1m    [form-panel][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var todomvc.views/form-panel[0m
+  [36m106[0m  [36m    [footer-controls]][0m
+  [36m107[0m  [36m   [:footer#info[0m
+  [36m108[0m  [36m    [:p "Double-click to edit a todo"]]])[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(defn forms-panel[e][0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.129 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:105  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/form-panel[0m
+
+  [36m101[0m  [36m   [:section#todoapp[0m
+  [36m102[0m  [36m    [task-entry][0m
+  [36m103[0m  [36m    (when (seq @(subscribe [:todos]))[0m
+  [36m104[0m  [36m      [task-list])[0m
+  [33m105[0m  [1m    [form-panel][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var todomvc.views/form-panel[0m
+  [36m106[0m  [36m    [footer-controls]][0m
+  [36m107[0m  [36m   [:footer#info[0m
+  [36m108[0m  [36m    [:p "Double-click to edit a todo"]]])[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(defn request-it-button[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.698 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:105  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/form-panel[0m
+
+  [36m101[0m  [36m   [:section#todoapp[0m
+  [36m102[0m  [36m    [task-entry][0m
+  [36m103[0m  [36m    (when (seq @(subscribe [:todos]))[0m
+  [36m104[0m  [36m      [task-list])[0m
+  [33m105[0m  [1m    [form-panel][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var todomvc.views/form-panel[0m
+  [36m106[0m  [36m    [footer-controls]][0m
+  [36m107[0m  [36m   [:footer#info[0m
+  [36m108[0m  [36m    [:p "Double-click to edit a todo"]]])[0m
+  [36m109[0m  [36m[0m
+  [36m110[0m  [36m(defn request-it-button[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.924 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/events.cljs   line:213  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.events/GET[0m
+
+  [36m209[0m  [36m  (fn                ;; <-- the handler function[0m
+  [36m210[0m  [36m    [db _][0m
+  [36m211[0m  [36m[0m
+  [36m212[0m  [36m    ;; kick off the GET, making sure to supply a callback for success and failure[0m
+  [33m213[0m  [1m    (GET[0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var todomvc.events/GET[0m
+  [36m214[0m  [36m      "http://json.my-endpoint.com/blah"[0m
+  [36m215[0m  [36m      {:handler       #(dispatch [:process-response %1])   ;; <2> further dispatch !![0m
+  [36m216[0m  [36m       :error-handler #(dispatch [:bad-response %1])})     ;; <2> further dispatch !![0m
+  [36m217[0m  [36m[0m
+  [36m218[0m  [36m     ;; update a flag in `app-db` ... presumably to cause a "Loading..." UI[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/events.cljs  ----[0m
+[36m----  Compiler Warning on   src/todomvc/events.cljs   line:215  column:25  ----[0m
+
+  [1mUse of undeclared Var todomvc.events/dispatch[0m
+
+  [36m212[0m  [36m    ;; kick off the GET, making sure to supply a callback for success and failure[0m
+  [36m213[0m  [36m    (GET[0m
+  [36m214[0m  [36m      "http://json.my-endpoint.com/blah"[0m
+  [33m215[0m  [1m      {:handler       #(dispatch [:process-response %1])   ;; <2> further dispatch !![0m
+  [0m   [0m  [33m                        ^--- Use of undeclared Var todomvc.events/dispatch[0m
+  [36m216[0m  [36m       :error-handler #(dispatch [:bad-response %1])})     ;; <2> further dispatch !![0m
+  [36m217[0m  [36m[0m
+  [36m218[0m  [36m     ;; update a flag in `app-db` ... presumably to cause a "Loading..." UI[0m
+  [36m219[0m  [36m     (assoc db :loading? true)))    ;; <3> return an updated db[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/events.cljs  ----[0m
+[36m----  Compiler Warning on   src/todomvc/events.cljs   line:216  column:25  ----[0m
+
+  [1mUse of undeclared Var todomvc.events/dispatch[0m
+
+  [36m212[0m  [36m    ;; kick off the GET, making sure to supply a callback for success and failure[0m
+  [36m213[0m  [36m    (GET[0m
+  [36m214[0m  [36m      "http://json.my-endpoint.com/blah"[0m
+  [36m215[0m  [36m      {:handler       #(dispatch [:process-response %1])   ;; <2> further dispatch !![0m
+  [33m216[0m  [1m       :error-handler #(dispatch [:bad-response %1])})     ;; <2> further dispatch !![0m
+  [0m   [0m  [33m                        ^--- Use of undeclared Var todomvc.events/dispatch[0m
+  [36m217[0m  [36m[0m
+  [36m218[0m  [36m     ;; update a flag in `app-db` ... presumably to cause a "Loading..." UI[0m
+  [36m219[0m  [36m     (assoc db :loading? true)))    ;; <3> return an updated db[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/events.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.464 seconds.[0m
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/events.cljs   line:216  column:25  ----[0m
+
+  [1mUse of undeclared Var todomvc.events/dispatch[0m
+
+  [36m213[0m  [36m    ;; kick off the GET, making sure to supply a callback for success and failure[0m
+  [36m214[0m  [36m    (GET[0m
+  [36m215[0m  [36m      "http://json.my-endpoint.com/blah"[0m
+  [33m216[0m  [1m      {:handler       #(dispatch [:process-response %1])   ;; <2> further dispatch !![0m
+  [0m   [0m  [33m                        ^--- Use of undeclared Var todomvc.events/dispatch[0m
+  [36m217[0m  [36m       :error-handler #(dispatch [:bad-response %1])})     ;; <2> further dispatch !![0m
+  [36m218[0m  [36m[0m
+  [36m219[0m  [36m     ;; update a flag in `app-db` ... presumably to cause a "Loading..." UI[0m
+  [36m220[0m  [36m     (assoc db :loading? true)))    ;; <3> return an updated db[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/events.cljs  ----[0m
+[36m----  Compiler Warning on   src/todomvc/events.cljs   line:217  column:25  ----[0m
+
+  [1mUse of undeclared Var todomvc.events/dispatch[0m
+
+  [36m213[0m  [36m    ;; kick off the GET, making sure to supply a callback for success and failure[0m
+  [36m214[0m  [36m    (GET[0m
+  [36m215[0m  [36m      "http://json.my-endpoint.com/blah"[0m
+  [36m216[0m  [36m      {:handler       #(dispatch [:process-response %1])   ;; <2> further dispatch !![0m
+  [33m217[0m  [1m       :error-handler #(dispatch [:bad-response %1])})     ;; <2> further dispatch !![0m
+  [0m   [0m  [33m                        ^--- Use of undeclared Var todomvc.events/dispatch[0m
+  [36m218[0m  [36m[0m
+  [36m219[0m  [36m     ;; update a flag in `app-db` ... presumably to cause a "Loading..." UI[0m
+  [36m220[0m  [36m     (assoc db :loading? true)))    ;; <3> return an updated db[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/events.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.133 seconds.[0m
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 1.347 seconds.[0m
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.865 seconds.[0m
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[31mFailed to compile "resources/public/js/client.js" in 0.746 seconds.[0m
+[36m----  Could not Analyze  src/todomvc/events.cljs  ----[0m
+
+  [1mNo such namespace: day8.re-frame.http-fx, could not locate day8/re_frame/http_fx.cljs, day8/re_frame/http_fx.cljc, or JavaScript source providing "day8.re-frame.http-fx" [0m
+
+[36m----  Analysis Error : Please see src/todomvc/events.cljs  ----[0m
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[31mFailed to compile "resources/public/js/client.js" in 0.684 seconds.[0m
+[36m----  Could not Analyze  src/todomvc/events.cljs  ----[0m
+
+  [1mNo such namespace: day8.re-frame.http-fx, could not locate day8/re_frame/http_fx.cljs, day8/re_frame/http_fx.cljc, or JavaScript source providing "day8.re-frame.http-fx" [0m
+
+[36m----  Analysis Error : Please see src/todomvc/events.cljs  ----[0m
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:92  column:6  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/request-it-button[0m
+
+  [36m88[0m  [36m[][0m
+  [36m89[0m  [36m[:header#header[0m
+  [36m90[0m  [36m  [:h1 "todos"][0m
+  [36m91[0m  [36m [:div[0m
+  [33m92[0m  [1m  [request-it-button]][0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var todomvc.views/request-it-button[0m
+  [36m93[0m  [36m  [todo-input[0m
+  [36m94[0m  [36m    {:id "new-todo"[0m
+  [36m95[0m  [36m     :placeholder "What needs to be done?"[0m
+  [36m96[0m  [36m     :on-save #(dispatch [:add-todo %])}]])[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[31mFailed to compile "resources/public/js/client.js" in 0.542 seconds.[0m
+[36m----  Could not Analyze  src/todomvc/events.cljs  ----[0m
+
+  [1mNo such namespace: day8.re-frame.http-fx, could not locate day8/re_frame/http_fx.cljs, day8/re_frame/http_fx.cljc, or JavaScript source providing "day8.re-frame.http-fx" [0m
+
+[36m----  Analysis Error : Please see src/todomvc/events.cljs  ----[0m
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[31mFailed to compile "resources/public/js/client.js" in 0.92 seconds.[0m
+[36m----  Could not Analyze  src/todomvc/events.cljs  ----[0m
+
+  [1mNo such namespace: day8.re-frame.http-fx, could not locate day8/re_frame/http_fx.cljs, day8/re_frame/http_fx.cljc, or JavaScript source providing "day8.re-frame.http-fx" [0m
+
+[36m----  Analysis Error : Please see src/todomvc/events.cljs  ----[0m
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[31mFailed to compile "resources/public/js/client.js" in 1.814 seconds.[0m
+[36m----  Could not Analyze  src/todomvc/events.cljs  ----[0m
+
+  [1mNo such namespace: day8.re-frame.http-fx, could not locate day8/re_frame/http_fx.cljs, day8/re_frame/http_fx.cljc, or JavaScript source providing "day8.re-frame.http-fx" [0m
+
+[36m----  Analysis Error : Please see src/todomvc/events.cljs  ----[0m
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:117  column:21  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/your[0m
+
+  [36m114[0m  [36m(defn your-button [][0m
+  [36m115[0m  [36m[:div[0m
+  [36m116[0m  [36m    [:input.btn {:type "button" :value "Click Me!"[0m
+  [33m117[0m  [1m        :on-click ( your func here ) }]])[0m
+  [0m   [0m  [33m                    ^--- Use of undeclared Var todomvc.views/your[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:117  column:26  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/func[0m
+
+  [36m114[0m  [36m(defn your-button [][0m
+  [36m115[0m  [36m[:div[0m
+  [36m116[0m  [36m    [:input.btn {:type "button" :value "Click Me!"[0m
+  [33m117[0m  [1m        :on-click ( your func here ) }]])[0m
+  [0m   [0m  [33m                         ^--- Use of undeclared Var todomvc.views/func[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[36m----  Compiler Warning on   src/todomvc/views.cljs   line:117  column:31  ----[0m
+
+  [1mUse of undeclared Var todomvc.views/here[0m
+
+  [36m114[0m  [36m(defn your-button [][0m
+  [36m115[0m  [36m[:div[0m
+  [36m116[0m  [36m    [:input.btn {:type "button" :value "Click Me!"[0m
+  [33m117[0m  [1m        :on-click ( your func here ) }]])[0m
+  [0m   [0m  [33m                              ^--- Use of undeclared Var todomvc.views/here[0m
+
+[36m----  Compiler Warning : Please see src/todomvc/views.cljs  ----[0m
+[31mFailed to compile "resources/public/js/client.js" in 1.175 seconds.[0m
+[36m----  Could not Analyze  src/todomvc/events.cljs  ----[0m
+
+  [1mNo such namespace: day8.re-frame.http-fx, could not locate day8/re_frame/http_fx.cljs, day8/re_frame/http_fx.cljc, or JavaScript source providing "day8.re-frame.http-fx" [0m
+
+[36m----  Analysis Error : Please see src/todomvc/events.cljs  ----[0m
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[31mFailed to compile "resources/public/js/client.js" in 0.887 seconds.[0m
+[36m----  Could not Analyze  src/todomvc/events.cljs  ----[0m
+
+  [1mNo such namespace: day8.re-frame.http-fx, could not locate day8/re_frame/http_fx.cljs, day8/re_frame/http_fx.cljc, or JavaScript source providing "day8.re-frame.http-fx" [0m
+
+[36m----  Analysis Error : Please see src/todomvc/events.cljs  ----[0m
+[0mCompiling "resources/public/js/client.js" from ["src" "../../src"]...[0m
+[32mSuccessfully compiled "resources/public/js/client.js" in 0.961 seconds.[0m
+notifying browser that file changed:  resources/public/js/goog/deps.js
+notifying browser that file changed:  resources/public/js/cljs_deps.js
+notifying browser that file changed:  resources/public/js/todomvc/views.js
+notifying browser that file changed:  resources/public/js/todomvc/db.js
+notifying browser that file changed:  resources/public/js/todomvc/events.js
+notifying browser that file changed:  resources/public/js/todomvc/subs.js
+notifying browser that file changed:  resources/public/js/todomvc/core.js
